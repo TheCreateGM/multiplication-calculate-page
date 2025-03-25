@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h2 {
+    margin-bottom: 10px;
+}
+input {
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(36, 35, 42);
+    line-height: 20px;
+    min-height: 28px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    box-shadow:
+        rgb(0 0 0 / 12%) 0px 1px 3px,
+        rgb(0 0 0 / 24%) 0px 1px 2px;
+    background: rgb(251, 251, 251);
+    transition: all 0.1s ease 0s;
+    :focus {
+        border: 2px solid rgb(124, 138, 255);
+    }
+}
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition:
+        box-shadow 0.2s ease 0s,
+        -ms-transform 0.1s ease 0s,
+        -webkit-transform 0.1s ease 0s,
+        transform 0.1s ease 0s;
+    background: linear-gradient(
+        to right,
+        rgb(230, 30, 77) 0%,
+        rgb(227, 28, 95) 50%,
+        rgb(215, 4, 102) 100%
+    );
+    color: #fff;
+    margin-top: 10px;
+}
+button:hover {
+    background: darkblue;
+}
+.output {
+    margin-top: 15px;
+    font-size: 18px;
+}
+/* quiz */
+.feedback {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.correct {
+    color: green;
+}
+.wrong {
+    color: red;
+}
